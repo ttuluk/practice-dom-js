@@ -1,0 +1,75 @@
+.button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  padding: 10px 30px;
+  letter-spacing: 0.06em;
+  transition: background-color var(--animation) color var(--animation)
+    box-shadow var(--animation);
+}
+
+.hero__button {
+  background-color: var(--accent-text-color);
+  color: var(--secondary-text-color);
+  min-width: 200px;
+  margin-top: 30px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    cursor: pointer;
+  }
+}
+.form__button {
+  background-color: var(--accent-text-color);
+  color: var(--primary-bg-color);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  box-shadow: var(--border-modal);
+  border-radius: 4px;
+  
+  &:hover,
+  &:focus {
+    background-color: var(--accent-button-color);
+    cursor: pointer;
+  }
+}
+
+.filter__button {
+  padding: 6px 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding-top: 6px;
+
+  background-color: var(--button-bg-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition: background-color var(--animation), color var(--animation),
+    box-shadow var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+    color: var(--secondary-text-color);
+    cursor: pointer;
+    box-shadow: var(--prime-card-swadow);
+  }
+}

@@ -1,0 +1,25 @@
+.address {
+  font-style: inherit;
+}
+.address--margin {
+  margin-top: 20px;
+}
+
+.contacts__item {
+  margin-top: 9px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.contacts__link {
+  color: var(--footer-text-color);
+  transition: color var(--animation);
+}
+
+.contacts--address {
+  color: var(--secondary-text-color);
+
+  transition: color var(--animation);
+}

@@ -1,0 +1,30 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: no-wrap;
+  }
+}
+
+.filter__item {
+  display: flex;
+  margin-left: 8px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.filter--all {
+  background-color: var(--accent-text-color);
+  color: var(--secondary-text-color);
+
+  transition: background-color var(--animation) color var(--animation)
+    box-shadow var(--animation);
+}

@@ -1,0 +1,68 @@
+.auth-nav {
+  display: none;
+  color: var(--prime-text-color);
+  display: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+  }
+}
+.auth-nav--list {
+  margin-left: auto;
+}
+
+.auth-nav__item {
+  display: flex;
+  &:first-child {
+    @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.auth-nav .item + .item {
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
+}
+
+.auth-nav__link {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+.auth-nav--email {
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    padding-bottom: 0;
+  }
+}
+
+.auth-nav--tel {
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    padding-top: 0;
+  }
+}
+
+.auth-nav__icon {
+  stroke: currentColor;
+  fill: currentColor;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}

@@ -1,0 +1,88 @@
+.galery {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+}
+
+.galery__item {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.card {
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  box-shadow: none;
+  transition: box-shadow var(--animation);
+}
+
+.card--link {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: var(--prime-card-swadow);
+}
+
+.card__text {
+  position: relative;
+  top: 0;
+  border-right: 1px solid var(--border-portfolio-color);
+  border-bottom: 1px solid var(--border-portfolio-color);
+  border-left: 1px solid var(--border-portfolio-color);
+  padding: 20px 24px;
+  background-color: var(--primary-bg-color);
+  z-index: 4;
+}
+
+.card__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+/*overlay-portfolio*/
+.card__image-box {
+  position: relative;
+  top: 0;
+}
+
+.card__overlay {
+  position: absolute;
+  background-color: var(--overlay-bg-color);
+  width: 100%;
+  top: 100%;
+  left: 0;
+  padding: 63px 24px;
+  visibility: hidden;
+  overlay: 0;
+  transform: translateY(0);
+  transition: transform 500ms linear, overlay 500ms linear;
+}
+
+.card:hover .card__overlay,
+.card:focus .card__overlay {
+  overlay: 1;
+  visibility: visible;
+  transform: translateY(-100%);
+}
+
+.card__overlay-text {
+  position: relative;
+  top: 0;
+  width: 100%;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-align: left;
+}
+/*# sourceMappingURL=galery.css.map */
